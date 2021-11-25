@@ -5,7 +5,7 @@ repeat wait() until workspace.CurrentCamera
 -- Load previous settings --
 
 local savedColor = game:service'CookiesService':GetCookieValue('nebulaBackgroundColor3')~="" and game:service'CookiesService':GetCookieValue('nebulaBackgroundColor3') or "152, 6, 235"
-local savedKey = game:service'CookiesService':GetCookieValue('nebulaKeyBind')~="" and game:service'CookiesService':GetCookieValue('nebulaKeyBind') or "RightControl"
+local savedKey = game:service'CookiesService':GetCookieValue('nebulaKeyBind')~="" and game:service'CookiesService':GetCookieValue('nebulaKeyBind') or "\"
 
 coroutine.wrap(function()
 	local _,_,r,g,b = string.find(tostring(savedColor), "(%d+)%D+(%d+)%D+(%d+)")
